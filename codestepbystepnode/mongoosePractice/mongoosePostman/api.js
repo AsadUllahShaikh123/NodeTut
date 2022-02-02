@@ -10,7 +10,7 @@ const app = express();
 app.use(express.json())
 
 app.post('/create',async (req,resp)=>{
-  staff.create(req.body);
+  await staff.create(req.body);
   resp.send({Datainserted:'Yes'});
 })
 
